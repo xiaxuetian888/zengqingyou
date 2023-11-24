@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#text {
+  position: relative;
+  font-size: 40px;
+}
+
+@keyframes move {
+  0% {left: 0px;}
+  50% {left: 200px;}
+  100% {left: 0px;}
+}
+
+#text {
+  animation: move 2s infinite;
+}
+</style>
+</head>
+<body>
+
+<div id="text">曾庆有爱吃屎</div>
+
+<script>
+// Add some blinking effect
+var text = document.getElementById("text"); 
+setInterval(function(){
+  text.style.color = (text.style.color == "red" ? "black" : "red");
+}, 500);
+</script>
+
+</body>
+</html>
